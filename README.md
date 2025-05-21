@@ -90,3 +90,13 @@ RiskChain enables:
 Install dependencies:
 ```bash
 pip install -r requirements.txt
+
+🛠 Usage
+
+Run the analyzer:
+
+python3 main.py
+
+Or test Chainabuse API independently:
+
+python3 test_chainabuse.py
