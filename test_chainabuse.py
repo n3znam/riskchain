@@ -1,9 +1,9 @@
 import requests
 
-# Въведи своя реален API ключ тук:
-CHAINABUSE_KEY = "ca_ТВОЯ_КЛЮЧ_ТУК"
+# Type a real api key
+CHAINABUSE_KEY = "key"
 
-# Примерен BTC адрес за тестване
+# Primary BTC Address
 address = "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"
 
 def test_chainabuse(address):
@@ -20,11 +20,11 @@ def test_chainabuse(address):
             for report in data.get("data", []):
                 print(f"- Type: {report.get('category')}, Date: {report.get('created_at')}")
         else:
-            print("❌ API returned error:", response.text)
+            print(" API returned error:", response.text)
 
     except Exception as e:
-        print(f"❌ Exception occurred: {e}")
+        print(f" Exception occurred: {e}")
 
-# Изпълнение
+# Running
 if __name__ == "__main__":
     test_chainabuse(address)
