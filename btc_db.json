@@ -1,0 +1,25 @@
+{
+  "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh": {
+    "address": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+    "tx_count": 825,
+    "received": 14.40476715,
+    "sent": 12.87005839,
+    "age_days": 0,
+    "risk_score": 2,
+    "notes": [
+      {
+        "text": "Dust attack pattern (tiny outputs)",
+        "severity": 2,
+        "category": "anomaly"
+      },
+      {
+        "text": "Frequent transactions detected (possible automation)",
+        "severity": 2,
+        "category": "timing"
+      }
+    ],
+    "flags": {
+      "is_dust": true
+    }
+  }
+}
